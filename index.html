@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Todoタイマー</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Todoタイマー</h1>
+  <input type="text" id="taskInput" placeholder="タスクを入力..." />
+  <button id="addBtn">追加</button>
+  <div id="taskList"></div>
+  <!-- 締切入力モーダル -->
+<div id="dueModal" class="modal hidden">
+    <div class="modal-content">
+      <label>締切日時を選択：</label>
+      <input type="datetime-local" id="dueInput" />
+      <div style="margin-top: 10px;">
+        <button id="saveDueBtn">保存</button>
+        <button id="cancelDueBtn">キャンセル</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
