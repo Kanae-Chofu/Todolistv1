@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  
+  .task, .subtask {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .subtask {
+    margin-left: 20px;
+    background: #f0f0f0;
+  }
+  
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+  }
+  
+  .time, .avg-time {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: #4caf50;
+    transition: width 0.3s ease;
+  }
+  
+  .due-soon {
+    background-color: #fff8e1;
+  }
+  
+  .overdue {
+    background-color: #ffe6e6;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
